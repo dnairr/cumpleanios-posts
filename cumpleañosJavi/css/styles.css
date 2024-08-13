@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+#inicio {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFDDF4;
+}
+
+#inicio .contenedor {
+    width: 100%;
+    height: auto;
+}
+
+#inicio .contenedor header {
+    width: 100%;
+    background-color: #FFB7C5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#inicio .contenedor header .titulo {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#inicio .contenedor .contenido {
+    width: 100%;
+    height: 93vh;
+    overflow-y: scroll;
+    background-color: #FFE4E1;
+}
+
+
+
+.post {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post .post-header {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #FADADD;
+    border-radius: 10px 10px 0 0;
+}
+
+.post .post-body {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #FFE4E1;
+}
+
+.post .post-body img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post .post-footer {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: #FFB7C5;
+    border-radius: 0 0 10px 10px;
+}
+
+.post .post-footer p {
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+/* Media Query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+
+    #inicio .contenedor header .titulo {
+        font-size: 1.5em; /* Tamaño del título reducido para pantallas pequeñas */
+    }
+
+    #inicio .contenedor .contenido {
+        height: auto;
+    }
+
+    .post {
+        width: 95%; /* Mayor ancho en pantallas pequeñas */
+    }
+
+    .post .post-header h2 {
+        font-size: 1.2em; /* Tamaño del nombre reducido */
+    }
+
+    .post .post-body {
+        max-height: 300px; /* Altura de la imagen reducida para pantallas pequeñas */
+    }
+
+    .post .post-footer p {
+        font-size: 0.9em; /* Tamaño del texto ligeramente reducido */
+    }
+}
