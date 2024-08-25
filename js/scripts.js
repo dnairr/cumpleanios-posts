@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
     loadTextFile("mensaje-feña", "./posts/Fernanda/mensaje.txt");
     loadTextFile("mensaje-lalo", "./posts/Lalo/mensaje.txt");
     loadTextFile("mensaje-mama", "./posts/Mamá_/mensaje.txt");
+    loadTextFile("mensaje-mona_grande", "./posts/Mona_Grande/mensaje.txt");
+    loadTextFile("mensaje-amarito", "./posts/Amarito/mensaje.txt");
+    loadTextFile("mensaje-branndon", "./posts/Branndon/mensaje.txt");
 });
 
 
